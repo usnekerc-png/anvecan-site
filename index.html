@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05070b" />
+  <meta name="description" content="ANVECAN — Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ANVECAN" />
+  <meta property="og:title" content="ANVECAN | Dijital Zekâ, Gerçek Etki" />
+  <meta property="og:description" content="Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
+  <meta property="og:image" content="/anvecan-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ANVECAN | Dijital Zekâ, Gerçek Etki" />
+  <meta name="twitter:description" content="Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
+  <meta name="twitter:image" content="/anvecan-og.jpg" />
+  <title>ANVECAN | Çok Yakında</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ANVECAN ana sayfa">
+      <span class="brand-mark" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+      <span>ANVECAN</span>
+    </a>
+
+    <div class="topbar-meta">
+      <span class="signal"><i></i> Sistem hazırlanıyor</span>
+      <span class="edition">2026 / 01</span>
+    </div>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy" aria-labelledby="main-title">
+      <div class="eyebrow reveal">
+        <span>Creative Technology Studio</span>
+        <i></i>
+        <span>İstanbul</span>
+      </div>
+
+      <h1 id="main-title" class="title" aria-label="Dijital zekâ, gerçek etki">
+        <span class="line reveal"><em>Dijital</em> zekâ.</span>
+        <span class="line reveal">Gerçek <strong>etki.</strong></span>
+      </h1>
+
+      <p class="intro reveal">
+        Yeni nesil dijital deneyimler, yapay zekâ destekli yaratıcı sistemler
+        ve markaları ileri taşıyan ürünler tasarlıyoruz.
+      </p>
+
+      <div class="launch-row reveal">
+        <div class="launch-pill">
+          <span>Çok yakında</span>
+          <b id="pulseText">Sinyal kuruluyor</b>
+        </div>
+        <a class="wedding-link" href="https://davet.anvecan.com" target="_blank" rel="noopener">
+          Düğün davetiyesi <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <aside class="orbital" aria-hidden="true">
+      <div class="orbital-ring ring-a"></div>
+      <div class="orbital-ring ring-b"></div>
+      <div class="orbital-ring ring-c"></div>
+      <div class="orbital-core">
+        <span>AI</span>
+        <small>ACTIVE</small>
+      </div>
+      <div class="orbit-dot dot-a"></div>
+      <div class="orbit-dot dot-b"></div>
+      <div class="orbit-dot dot-c"></div>
+      <div class="orbital-label label-a">01 / CREATE</div>
+      <div class="orbital-label label-b">02 / THINK</div>
+      <div class="orbital-label label-c">03 / BUILD</div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="progress">
+      <span class="progress-label">Launch sequence</span>
+      <div class="progress-track"><i></i></div>
+      <span class="progress-value" id="progressValue">72%</span>
+    </div>
+
+    <div class="footer-right">
+      <span>anvecan.com</span>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

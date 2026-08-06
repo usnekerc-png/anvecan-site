@@ -1,0 +1,34 @@
+ANVECAN TEASER — KURULUM
+
+İçerik:
+- index.html
+- styles.css
+- app.js
+- favicon.svg
+- anvecan-og.jpg
+
+Özellikler:
+- Tam ekran, premium dijital / yapay zekâ teması
+- Hareketli ağ ve partikül animasyonu
+- Mobil uyumlu
+- Çok hafif ve hızlı
+- WhatsApp / sosyal medya önizleme görseli
+- Düğün davetiyesi için davet.anvecan.com bağlantısı
+
+Önerilen yayınlama yöntemi:
+1. GitHub'da `anvecan-site` adında yeni bir PUBLIC repo oluşturun.
+2. Bu klasördeki tüm dosyaları reponun ana dizinine yükleyin.
+3. Cloudflare Pages'te yeni bir Pages projesi açın ve bu repoyu bağlayın.
+4. Framework: None
+5. Build command: boş
+6. Build output directory: /
+7. Deploy tamamlandıktan sonra custom domain olarak `www.anvecan.com` bağlayın.
+8. GoDaddy DNS'te `www` için CNAME'i yeni Pages adresine yönlendirin.
+9. Ana domain `anvecan.com` için GoDaddy forwarding kullanarak `https://www.anvecan.com` adresine 301 yönlendirme yapın.
+
+Alternatif:
+Domain DNS yönetimini tamamen Cloudflare'a taşırsanız, hem `anvecan.com` hem `www.anvecan.com`
+aynı Pages projesine doğrudan bağlanabilir.
+
+Not:
+`davet.anvecan.com` mevcut düğün davetiyesi olarak çalışmaya devam eder.
