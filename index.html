@@ -2,103 +2,214 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#05070b" />
-  <meta name="description" content="ANVECAN — Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
-  <meta property="og:locale" content="tr_TR" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>ANVECAN — AI & Digital Studio</title>
+  <meta name="description" content="ANVECAN — Yapay zekâ, dijital ürünler ve güçlü deneyimler tasarlayan bağımsız dijital stüdyo." />
+  <meta name="theme-color" content="#070809" />
+
+  <link rel="canonical" href="https://www.anvecan.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ANVECAN" />
-  <meta property="og:title" content="ANVECAN | Dijital Zekâ, Gerçek Etki" />
-  <meta property="og:description" content="Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
-  <meta property="og:image" content="/anvecan-og.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:title" content="ANVECAN — We build what’s next." />
+  <meta property="og:description" content="Yapay zekâ, dijital ürünler ve güçlü deneyimler." />
+  <meta property="og:url" content="https://www.anvecan.com/" />
+  <meta property="og:image" content="https://www.anvecan.com/anvecan-og.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ANVECAN | Dijital Zekâ, Gerçek Etki" />
-  <meta name="twitter:description" content="Yeni nesil dijital deneyimler ve yapay zekâ destekli yaratıcı sistemler. Çok yakında." />
-  <meta name="twitter:image" content="/anvecan-og.jpg" />
-  <title>ANVECAN | Çok Yakında</title>
+  <meta name="twitter:title" content="ANVECAN — We build what’s next." />
+  <meta name="twitter:description" content="Yapay zekâ, dijital ürünler ve güçlü deneyimler." />
+  <meta name="twitter:image" content="https://www.anvecan.com/anvecan-og.svg" />
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
-  <canvas id="network" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
+  <canvas id="network" aria-hidden="true"></canvas>
   <div class="spotlight" id="spotlight" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="/" aria-label="ANVECAN ana sayfa">
-      <span class="brand-mark" aria-hidden="true">
-        <i></i><i></i><i></i>
-      </span>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ANVECAN ana sayfa">
+      <span class="brand-dot"></span>
       <span>ANVECAN</span>
     </a>
-
-    <div class="topbar-meta">
-      <span class="signal"><i></i> Sistem hazırlanıyor</span>
-      <span class="edition">2026 / 01</span>
-    </div>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#studio">Studio</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="mailto:usnekerc@gmail.com">Start a project ↗</a>
   </header>
 
-  <main class="hero">
-    <section class="hero-copy" aria-labelledby="main-title">
-      <div class="eyebrow reveal">
-        <span>Creative Technology Studio</span>
-        <i></i>
-        <span>İstanbul</span>
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-orb" aria-hidden="true">
+        <div class="orb-ring ring-1"></div>
+        <div class="orb-ring ring-2"></div>
+        <div class="orb-ring ring-3"></div>
+        <div class="orb-core"></div>
       </div>
 
-      <h1 id="main-title" class="title" aria-label="Dijital zekâ, gerçek etki">
-        <span class="line reveal"><em>Dijital</em> zekâ.</span>
-        <span class="line reveal">Gerçek <strong>etki.</strong></span>
+      <div class="eyebrow reveal">
+        <span class="status"></span>
+        Independent AI & Digital Studio
+      </div>
+
+      <h1 class="reveal delay-1">
+        We build<br />
+        <span>what’s next.</span>
       </h1>
 
-      <p class="intro reveal">
-        Yeni nesil dijital deneyimler, yapay zekâ destekli yaratıcı sistemler
-        ve markaları ileri taşıyan ürünler tasarlıyoruz.
+      <p class="hero-copy reveal delay-2">
+        Yapay zekâ, dijital ürünler ve güçlü deneyimler.
+        Fikirleri; hızlı, akıllı ve estetik dijital sistemlere dönüştürüyoruz.
       </p>
 
-      <div class="launch-row reveal">
-        <div class="launch-pill">
-          <span>Çok yakında</span>
-          <b id="pulseText">Sinyal kuruluyor</b>
-        </div>
-        <a class="wedding-link" href="https://davet.anvecan.com" target="_blank" rel="noopener">
-          Düğün davetiyesi <span>↗</span>
-        </a>
+      <div class="hero-actions reveal delay-3">
+        <a class="btn btn-primary" href="#works">Explore ANVECAN <span>↓</span></a>
+        <a class="btn btn-ghost" href="mailto:usnekerc@gmail.com">Bir proje konuşalım ↗</a>
+      </div>
+
+      <div class="hero-meta reveal delay-4">
+        <div><span>01</span> AI Solutions</div>
+        <div><span>02</span> Web Experiences</div>
+        <div><span>03</span> Digital Products</div>
+        <div><span>04</span> Brand Systems</div>
       </div>
     </section>
 
-    <aside class="orbital" aria-hidden="true">
-      <div class="orbital-ring ring-a"></div>
-      <div class="orbital-ring ring-b"></div>
-      <div class="orbital-ring ring-c"></div>
-      <div class="orbital-core">
-        <span>AI</span>
-        <small>ACTIVE</small>
+    <section class="marquee" aria-label="ANVECAN yetkinlikleri">
+      <div class="marquee-track">
+        <span>AI SOLUTIONS</span><i>✦</i>
+        <span>DIGITAL PRODUCTS</span><i>✦</i>
+        <span>WEB EXPERIENCES</span><i>✦</i>
+        <span>BRAND SYSTEMS</span><i>✦</i>
+        <span>CREATIVE TECHNOLOGY</span><i>✦</i>
+        <span>AI SOLUTIONS</span><i>✦</i>
+        <span>DIGITAL PRODUCTS</span><i>✦</i>
+        <span>WEB EXPERIENCES</span><i>✦</i>
       </div>
-      <div class="orbit-dot dot-a"></div>
-      <div class="orbit-dot dot-b"></div>
-      <div class="orbit-dot dot-c"></div>
-      <div class="orbital-label label-a">01 / CREATE</div>
-      <div class="orbital-label label-b">02 / THINK</div>
-      <div class="orbital-label label-c">03 / BUILD</div>
-    </aside>
+    </section>
+
+    <section class="section studio" id="studio">
+      <div class="section-kicker reveal">/ STUDIO</div>
+      <div class="studio-grid">
+        <h2 class="reveal">Dijital dünyada<br><span>fark yaratan</span><br>sistemler kuruyoruz.</h2>
+        <div class="studio-copy reveal">
+          <p>
+            ANVECAN; yapay zekâ, web teknolojileri, otomasyon ve yaratıcı tasarımı
+            bir araya getiren bağımsız bir dijital stüdyo.
+          </p>
+          <p>
+            Sadece güzel görünen işler değil; çalışan, ölçülebilen ve büyüyebilen
+            dijital ürünler tasarlıyoruz.
+          </p>
+        </div>
+      </div>
+
+      <div class="capabilities">
+        <article class="cap-card reveal">
+          <span class="cap-no">01</span>
+          <h3>AI Solutions</h3>
+          <p>İş akışlarına entegre edilen yapay zekâ çözümleri, akıllı asistanlar ve otomasyonlar.</p>
+          <div class="cap-arrow">↗</div>
+        </article>
+        <article class="cap-card reveal">
+          <span class="cap-no">02</span>
+          <h3>Web Experiences</h3>
+          <p>Hızlı, premium, mobil uyumlu ve markanın karakterini taşıyan web deneyimleri.</p>
+          <div class="cap-arrow">↗</div>
+        </article>
+        <article class="cap-card reveal">
+          <span class="cap-no">03</span>
+          <h3>Digital Products</h3>
+          <p>Fikirden prototipe, arayüzden çalışan ürüne kadar uçtan uca dijital ürün geliştirme.</p>
+          <div class="cap-arrow">↗</div>
+        </article>
+        <article class="cap-card reveal">
+          <span class="cap-no">04</span>
+          <h3>Brand Systems</h3>
+          <p>Dijitalde tutarlı çalışan marka dili, görsel sistemler ve ürün odaklı kimlikler.</p>
+          <div class="cap-arrow">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section works" id="works">
+      <div class="works-head">
+        <div class="section-kicker reveal">/ SELECTED WORKS</div>
+        <p class="reveal">İlk örnek işimizi yayına aldık. Devamı geliyor.</p>
+      </div>
+
+      <a class="project project-wedding reveal" href="https://davet.anvecan.com" target="_blank" rel="noopener">
+        <div class="project-visual">
+          <div class="project-glow"></div>
+          <div class="invite-card">
+            <div class="invite-monogram">B / C</div>
+            <div class="invite-names">Buse <em>&</em> Can</div>
+            <div class="invite-line"></div>
+            <div class="invite-sub">DIGITAL WEDDING EXPERIENCE</div>
+            <div class="invite-date">06 · 09 · 2026</div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <span class="project-tag">WEB EXPERIENCE · 2026</span>
+            <h3>Buse & Can</h3>
+            <p>Dijital davetiye, RSVP sistemi, yönetim paneli ve özel alan adıyla uçtan uca bir düğün deneyimi.</p>
+          </div>
+          <div class="project-open">View project ↗</div>
+        </div>
+      </a>
+    </section>
+
+    <section class="section lab">
+      <div class="lab-panel reveal">
+        <div class="lab-head">
+          <span>ANVECAN LAB / 001</span>
+          <span class="lab-live"><i></i> EXPERIMENTING</span>
+        </div>
+        <div class="lab-body">
+          <h2>Ideas become<br><span>systems.</span></h2>
+          <p>
+            ANVECAN LAB; yapay zekâ, otomasyon ve etkileşim tasarımıyla
+            yeni dijital ürün fikirlerini test ettiğimiz deney alanı.
+          </p>
+        </div>
+        <div class="lab-grid" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-kicker reveal">/ CONTACT</div>
+      <div class="contact-grid">
+        <div>
+          <h2 class="reveal">Bir şey<br><span>üretelim.</span></h2>
+          <p class="reveal">Yeni bir fikir, marka, dijital ürün veya AI projesi için ulaş.</p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:usnekerc@gmail.com">
+            <span>Email</span>
+            <strong>usnekerc@gmail.com</strong>
+            <i>↗</i>
+          </a>
+          <a href="https://instagram.com/anvecan.co" target="_blank" rel="noopener">
+            <span>Instagram</span>
+            <strong>@anvecan.co</strong>
+            <i>↗</i>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="progress">
-      <span class="progress-label">Launch sequence</span>
-      <div class="progress-track"><i></i></div>
-      <span class="progress-value" id="progressValue">72%</span>
-    </div>
-
-    <div class="footer-right">
-      <span>anvecan.com</span>
-      <span class="clock" id="clock">--:--:--</span>
+  <footer>
+    <div class="footer-brand">ANVECAN</div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> ANVECAN</span>
+      <span>AI · DIGITAL · CREATIVE TECHNOLOGY</span>
+      <span id="clock">IST — --:--</span>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
