@@ -1,0 +1,9 @@
+{
+  "name": "ANVECAN",
+  "short_name": "ANVECAN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040811",
+  "theme_color": "#050914",
+  "icons": []
+}

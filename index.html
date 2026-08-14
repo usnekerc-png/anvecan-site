@@ -2,214 +2,255 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>ANVECAN — AI & Digital Studio</title>
-  <meta name="description" content="ANVECAN — Yapay zekâ, dijital ürünler ve güçlü deneyimler tasarlayan bağımsız dijital stüdyo." />
-  <meta name="theme-color" content="#070809" />
-
-  <link rel="canonical" href="https://www.anvecan.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="ANVECAN — We build what’s next." />
-  <meta property="og:description" content="Yapay zekâ, dijital ürünler ve güçlü deneyimler." />
-  <meta property="og:url" content="https://www.anvecan.com/" />
-  <meta property="og:image" content="https://www.anvecan.com/anvecan-og.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ANVECAN — We build what’s next." />
-  <meta name="twitter:description" content="Yapay zekâ, dijital ürünler ve güçlü deneyimler." />
-  <meta name="twitter:image" content="https://www.anvecan.com/anvecan-og.svg" />
-
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050914" />
+  <meta name="description" content="ANVECAN — Yapay zekâ destekli uygulamalar, web deneyimleri, otomasyon ve özel dijital sistemler." />
+  <title>ANVECAN — AI & Digital Systems</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
-  <canvas id="network" aria-hidden="true"></canvas>
-  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="ANVECAN ana sayfa">
-      <span class="brand-dot"></span>
-      <span>ANVECAN</span>
-    </a>
-    <nav class="nav" aria-label="Ana menü">
-      <a href="#studio">Studio</a>
-      <a href="#works">Works</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="header-cta" href="mailto:usnekerc@gmail.com">Start a project ↗</a>
+  <header class="topbar" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="ANVECAN ana sayfa">
+        <span class="brand-main">anvecan</span><span class="brand-dot">.com</span><span class="brand-pulse"></span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="Ana menü">
+        <a class="nav-link active" href="#top">Ana Sayfa</a>
+        <a class="nav-link" href="#hizmetler">Hizmetler</a>
+        <a class="nav-link" href="#projeler">Projeler</a>
+        <a class="nav-link" href="#surec">Süreç</a>
+        <a class="nav-link" href="#iletisim">İletişim</a>
+      </nav>
+      <button class="btn btn-primary nav-cta" data-open-offer>
+        <span>Teklif Al</span><span class="arrow">→</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
-    <section class="hero" id="top">
-      <div class="hero-orb" aria-hidden="true">
-        <div class="orb-ring ring-1"></div>
-        <div class="orb-ring ring-2"></div>
-        <div class="orb-ring ring-3"></div>
-        <div class="orb-core"></div>
-      </div>
-
-      <div class="eyebrow reveal">
-        <span class="status"></span>
-        Independent AI & Digital Studio
-      </div>
-
-      <h1 class="reveal delay-1">
-        We build<br />
-        <span>what’s next.</span>
-      </h1>
-
-      <p class="hero-copy reveal delay-2">
-        Yapay zekâ, dijital ürünler ve güçlü deneyimler.
-        Fikirleri; hızlı, akıllı ve estetik dijital sistemlere dönüştürüyoruz.
-      </p>
-
-      <div class="hero-actions reveal delay-3">
-        <a class="btn btn-primary" href="#works">Explore ANVECAN <span>↓</span></a>
-        <a class="btn btn-ghost" href="mailto:usnekerc@gmail.com">Bir proje konuşalım ↗</a>
-      </div>
-
-      <div class="hero-meta reveal delay-4">
-        <div><span>01</span> AI Solutions</div>
-        <div><span>02</span> Web Experiences</div>
-        <div><span>03</span> Digital Products</div>
-        <div><span>04</span> Brand Systems</div>
-      </div>
-    </section>
-
-    <section class="marquee" aria-label="ANVECAN yetkinlikleri">
-      <div class="marquee-track">
-        <span>AI SOLUTIONS</span><i>✦</i>
-        <span>DIGITAL PRODUCTS</span><i>✦</i>
-        <span>WEB EXPERIENCES</span><i>✦</i>
-        <span>BRAND SYSTEMS</span><i>✦</i>
-        <span>CREATIVE TECHNOLOGY</span><i>✦</i>
-        <span>AI SOLUTIONS</span><i>✦</i>
-        <span>DIGITAL PRODUCTS</span><i>✦</i>
-        <span>WEB EXPERIENCES</span><i>✦</i>
-      </div>
-    </section>
-
-    <section class="section studio" id="studio">
-      <div class="section-kicker reveal">/ STUDIO</div>
-      <div class="studio-grid">
-        <h2 class="reveal">Dijital dünyada<br><span>fark yaratan</span><br>sistemler kuruyoruz.</h2>
-        <div class="studio-copy reveal">
-          <p>
-            ANVECAN; yapay zekâ, web teknolojileri, otomasyon ve yaratıcı tasarımı
-            bir araya getiren bağımsız bir dijital stüdyo.
-          </p>
-          <p>
-            Sadece güzel görünen işler değil; çalışan, ölçülebilen ve büyüyebilen
-            dijital ürünler tasarlıyoruz.
-          </p>
-        </div>
-      </div>
-
-      <div class="capabilities">
-        <article class="cap-card reveal">
-          <span class="cap-no">01</span>
-          <h3>AI Solutions</h3>
-          <p>İş akışlarına entegre edilen yapay zekâ çözümleri, akıllı asistanlar ve otomasyonlar.</p>
-          <div class="cap-arrow">↗</div>
-        </article>
-        <article class="cap-card reveal">
-          <span class="cap-no">02</span>
-          <h3>Web Experiences</h3>
-          <p>Hızlı, premium, mobil uyumlu ve markanın karakterini taşıyan web deneyimleri.</p>
-          <div class="cap-arrow">↗</div>
-        </article>
-        <article class="cap-card reveal">
-          <span class="cap-no">03</span>
-          <h3>Digital Products</h3>
-          <p>Fikirden prototipe, arayüzden çalışan ürüne kadar uçtan uca dijital ürün geliştirme.</p>
-          <div class="cap-arrow">↗</div>
-        </article>
-        <article class="cap-card reveal">
-          <span class="cap-no">04</span>
-          <h3>Brand Systems</h3>
-          <p>Dijitalde tutarlı çalışan marka dili, görsel sistemler ve ürün odaklı kimlikler.</p>
-          <div class="cap-arrow">↗</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section works" id="works">
-      <div class="works-head">
-        <div class="section-kicker reveal">/ SELECTED WORKS</div>
-        <p class="reveal">İlk örnek işimizi yayına aldık. Devamı geliyor.</p>
-      </div>
-
-      <a class="project project-wedding reveal" href="https://davet.anvecan.com" target="_blank" rel="noopener">
-        <div class="project-visual">
-          <div class="project-glow"></div>
-          <div class="invite-card">
-            <div class="invite-monogram">B / C</div>
-            <div class="invite-names">Buse <em>&</em> Can</div>
-            <div class="invite-line"></div>
-            <div class="invite-sub">DIGITAL WEDDING EXPERIENCE</div>
-            <div class="invite-date">06 · 09 · 2026</div>
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Akıllı Yazılımlar · Modern Arayüzler · Güçlü Otomasyon</div>
+          <h1 id="hero-title">Yapay zekâ destekli<br />dijital çözümlerle<br />işinizi <span class="gradient-text">geleceğe taşıyoruz.</span></h1>
+          <p class="hero-text">İşinizi anlayan, teknolojiyle büyüten çözümler geliştiriyoruz. Akıllı uygulamalar, web deneyimleri, arayüz tasarımı ve otomasyon sistemleriyle modern işletmeler için uçtan uca dijital ürünler tasarlıyoruz.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="#hizmetler">Hizmetlerimizi Keşfet <span class="arrow">→</span></a>
+            <a class="btn btn-ghost btn-large" href="#projeler">Projelerimize Göz At <span class="play">▶</span></a>
+          </div>
+          <div class="trust-row" aria-label="Yetkinlik alanları">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>AI</span><span>UX</span><span>API</span><span>APP</span>
+            </div>
+            <div><strong>Ürün fikrinden canlı sisteme</strong><small>Tasarım · Kod · Otomasyon · Entegrasyon</small></div>
           </div>
         </div>
-        <div class="project-info">
-          <div>
-            <span class="project-tag">WEB EXPERIENCE · 2026</span>
-            <h3>Buse & Can</h3>
-            <p>Dijital davetiye, RSVP sistemi, yönetim paneli ve özel alan adıyla uçtan uca bir düğün deneyimi.</p>
-          </div>
-          <div class="project-open">View project ↗</div>
+
+        <div class="hero-visual reveal" data-delay="120" id="heroScene" aria-label="ANVECAN ürün arayüzleri">
+          <div class="scene-grid" aria-hidden="true"></div>
+          <div class="orbit orbit-a" aria-hidden="true"></div>
+          <div class="orbit orbit-b" aria-hidden="true"></div>
+          <div class="platform" aria-hidden="true"><span></span></div>
+
+          <article class="device device-laptop float-a">
+            <div class="device-topline"><i></i><i></i><i></i><span>Depo Stok Yönetimi</span></div>
+            <div class="dashboard-shell">
+              <aside class="dash-sidebar">
+                <b>ANV</b>
+                <span class="sel">⌂</span><span>▦</span><span>⇄</span><span>◫</span><span>⚙</span>
+              </aside>
+              <div class="dash-main">
+                <div class="kpi-row">
+                  <div class="kpi"><small>Toplam Ürün</small><strong>2.350</strong><em>+8.4%</em></div>
+                  <div class="kpi"><small>Stok Değeri</small><strong>₺1.25M</strong><em>Canlı</em></div>
+                  <div class="kpi danger"><small>Kritik Stok</small><strong>128</strong><em>Uyarı</em></div>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-head"><span>Stok Durumu</span><small>Son 7 gün</small></div>
+                  <div class="bars" aria-hidden="true"><i style="--h:38%"></i><i style="--h:64%"></i><i style="--h:48%"></i><i style="--h:78%"></i><i style="--h:58%"></i><i style="--h:88%"></i><i style="--h:70%"></i><i style="--h:93%"></i><i style="--h:66%"></i><i style="--h:82%"></i></div>
+                </div>
+              </div>
+              <div class="donut-card"><div class="donut"><span>%38</span></div><small>Kategori Dağılımı</small><ul><li>Yiyecek</li><li>İçecek</li><li>Hammadde</li></ul></div>
+            </div>
+          </article>
+
+          <article class="device device-tablet float-b">
+            <div class="pos-head"><span>Cafe Adisyon Sistemi</span><small>Masa 07</small></div>
+            <div class="pos-body">
+              <div class="receipt">
+                <div><span>Türk Kahvesi</span><b>₺75</b></div>
+                <div><span>Cappuccino</span><b>₺110</b></div>
+                <div><span>Cheesecake</span><b>₺170</b></div>
+                <div><span>Su</span><b>₺40</b></div>
+                <div class="total"><span>Toplam</span><b>₺395</b></div>
+              </div>
+              <div class="menu-grid-mini"><span>☕</span><span>🥤</span><span>🥐</span><span>🍰</span><span>🥗</span><span>🍪</span></div>
+            </div>
+            <button type="button" tabindex="-1">Ödeme Al</button>
+          </article>
+
+          <article class="device device-phone float-c">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <small>09:41</small>
+              <h3>Merhaba 👋</h3>
+              <p>Bugün nasıl gidiyor?</p>
+              <div class="phone-card"><span>Günlük Özet</span><strong>₺24.850</strong><em>+12.5%</em></div>
+              <div class="phone-card warning"><span>Kritik Bildirim</span><strong>5 ürün</strong><button type="button" tabindex="-1">Detayları Gör</button></div>
+              <div class="phone-nav"><i>⌂</i><i>◫</i><i>♢</i><i>○</i></div>
+            </div>
+          </article>
         </div>
-      </a>
+      </div>
+      <div class="wave-lines" aria-hidden="true"></div>
     </section>
 
-    <section class="section lab">
-      <div class="lab-panel reveal">
-        <div class="lab-head">
-          <span>ANVECAN LAB / 001</span>
-          <span class="lab-live"><i></i> EXPERIMENTING</span>
+    <section class="services section-pad" id="hizmetler" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">✦</span><h2 id="services-title">Hizmetlerimiz</h2></div>
+          <p>İşinizi dijitalde büyütecek uçtan uca çözümler</p>
         </div>
-        <div class="lab-body">
-          <h2>Ideas become<br><span>systems.</span></h2>
-          <p>
-            ANVECAN LAB; yapay zekâ, otomasyon ve etkileşim tasarımıyla
-            yeni dijital ürün fikirlerini test ettiğimiz deney alanı.
-          </p>
+        <div class="service-grid">
+          <article class="service-card reveal" data-service="Depo Stok Sayımı Uygulaması">
+            <div class="service-icon">◇</div><h3>Depo Stok Sayımı<br />Uygulaması</h3><p>Stok, SKT, kritik seviye, depo transferi ve hareketleri tek merkezden yönetin.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
+          <article class="service-card reveal" data-delay="60" data-service="Cafe Adisyon Sistemi">
+            <div class="service-icon purple">☕</div><h3>Cafe Adisyon Sistemi</h3><p>Masa, sipariş, ödeme, ürün ve satış akışlarını hızlı ve sade bir sistemde birleştirin.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
+          <article class="service-card reveal" data-delay="120" data-service="Web Tasarım">
+            <div class="service-icon">◎</div><h3>Web Tasarım</h3><p>Markanızı güçlü gösteren modern, hızlı, responsive ve dönüşüm odaklı web deneyimleri.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
+          <article class="service-card reveal" data-delay="180" data-service="Mobil Uygulama">
+            <div class="service-icon purple">▯</div><h3>Mobil Uygulama</h3><p>İş modelinize özel, kullanıcı dostu mobil uygulamalar ve yönetim panelleri.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
+          <article class="service-card reveal" data-delay="240" data-service="AI Destekli Otomasyon">
+            <div class="service-icon">⌘</div><h3>AI Destekli Otomasyon</h3><p>Tekrarlayan işleri yapay zekâ, API ve otomasyon akışlarıyla daha hızlı hale getirin.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
+          <article class="service-card reveal" data-delay="300" data-service="UI/UX Tasarım">
+            <div class="service-icon purple">✣</div><h3>UI/UX Tasarım</h3><p>Premium görünüm, anlaşılır kullanım ve güçlü marka algısı için özel arayüz tasarımları.</p><button class="round-link" data-service-open aria-label="Detayları aç">→</button>
+          </article>
         </div>
-        <div class="lab-grid" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="contact section" id="contact">
-      <div class="section-kicker reveal">/ CONTACT</div>
-      <div class="contact-grid">
-        <div>
-          <h2 class="reveal">Bir şey<br><span>üretelim.</span></h2>
-          <p class="reveal">Yeni bir fikir, marka, dijital ürün veya AI projesi için ulaş.</p>
+    <section class="metrics" aria-label="ANVECAN yetkinlikleri">
+      <div class="container metric-grid">
+        <div class="metric reveal"><span>🚀</span><div><strong>6+</strong><small>Hizmet Alanı</small></div></div>
+        <div class="metric reveal"><span>⌁</span><div><strong>Web • Mobil</strong><small>Özel Yazılım Çözümleri</small></div></div>
+        <div class="metric reveal"><span>ϟ</span><div><strong>AI + API</strong><small>Akıllı Entegrasyon</small></div></div>
+        <div class="metric reveal"><span>◉</span><div><strong>Responsive</strong><small>Tüm Ekranlara Uyum</small></div></div>
+        <div class="metric reveal"><span>✣</span><div><strong>Uçtan Uca</strong><small>Tasarım → Geliştirme</small></div></div>
+      </div>
+    </section>
+
+    <section class="projects section-pad" id="projeler" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">✦</span><h2 id="projects-title">Öne Çıkan Projelerimiz</h2></div>
+          <div class="heading-right"><p>Gerçek ihtiyaçlar, akıllı dijital çözümler</p><button class="btn btn-ghost btn-small" id="allProjects">Tüm Projeleri Gör →</button></div>
         </div>
-        <div class="contact-links reveal">
-          <a href="mailto:usnekerc@gmail.com">
-            <span>Email</span>
-            <strong>usnekerc@gmail.com</strong>
-            <i>↗</i>
-          </a>
-          <a href="https://instagram.com/anvecan.co" target="_blank" rel="noopener">
-            <span>Instagram</span>
-            <strong>@anvecan.co</strong>
-            <i>↗</i>
-          </a>
+        <div class="project-carousel-wrap reveal">
+          <button class="carousel-btn prev" id="projectPrev" aria-label="Önceki projeler">←</button>
+          <div class="project-carousel" id="projectCarousel">
+            <article class="project-card" data-project="stock">
+              <div class="project-thumb warehouse-thumb"><div class="mini-screen"><span></span><span></span><span></span><b></b></div></div>
+              <div class="project-content"><span class="tag">Depo Yönetimi</span><h3>Akıllı Depo Stok Sayımı</h3><p>Stok takibi, SKT kontrolü, kritik ürün uyarıları, depolar arası transfer ve raporlama.</p><button data-project-open>Detayları İncele →</button></div>
+            </article>
+            <article class="project-card" data-project="pos">
+              <div class="project-thumb cafe-thumb"><div class="pos-terminal"><span>07</span><b>₺395</b><i></i><i></i><i></i></div></div>
+              <div class="project-content"><span class="tag">Cafe Sistemi</span><h3>Cafe Adisyon & POS</h3><p>Hızlı sipariş, masa yönetimi, ödeme akışı, menü yönetimi ve satış analitiği.</p><button data-project-open>Detayları İncele →</button></div>
+            </article>
+            <article class="project-card" data-project="dashboard">
+              <div class="project-thumb dashboard-thumb"><div class="dash-preview"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="project-content"><span class="tag">Dashboard</span><h3>Yönetim & Raporlama Paneli</h3><p>Operasyon verilerini tek ekranda anlaşılır içgörülere dönüştüren modern paneller.</p><button data-project-open>Detayları İncele →</button></div>
+            </article>
+            <article class="project-card" data-project="web">
+              <div class="project-thumb web-thumb"><div class="web-preview"><span></span><h4>ANVECAN</h4><i></i><i></i></div></div>
+              <div class="project-content"><span class="tag">Web Experience</span><h3>Premium Kurumsal Web</h3><p>3D hissi, mikro animasyonlar, güçlü tipografi ve yüksek performanslı responsive yapı.</p><button data-project-open>Detayları İncele →</button></div>
+            </article>
+          </div>
+          <button class="carousel-btn next" id="projectNext" aria-label="Sonraki projeler">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="surec" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><span class="section-kicker">✣</span><h2 id="process-title">Çalışma Sürecimiz</h2></div><p>Şeffaf, çevik ve sonuç odaklı bir yaklaşım</p></div>
+        <div class="process-grid">
+          <article class="process-step reveal"><div class="step-icon">⌕</div><span>01</span><div><h3>Keşif</h3><p>İhtiyaçları, kullanıcıları ve hedefleri netleştiriyoruz.</p></div></article>
+          <article class="process-step reveal" data-delay="80"><div class="step-icon">⌘</div><span>02</span><div><h3>Strateji</h3><p>Doğru teknoloji ve ürün yol haritasını belirliyoruz.</p></div></article>
+          <article class="process-step reveal" data-delay="160"><div class="step-icon">✎</div><span>03</span><div><h3>Tasarım</h3><p>Premium, anlaşılır ve kullanıcı odaklı deneyimi tasarlıyoruz.</p></div></article>
+          <article class="process-step reveal" data-delay="240"><div class="step-icon">&lt;/&gt;</div><span>04</span><div><h3>Geliştirme</h3><p>Test, optimizasyon ve entegrasyonlarla sistemi hayata geçiriyoruz.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-pad reveal" id="iletisim">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-orb"></div>
+          <div><span class="eyebrow"><span class="eyebrow-dot"></span> Bir fikriniz mi var?</span><h2>Birlikte güçlü bir dijital ürün<br />oluşturalım.</h2><p>İhtiyacınızı anlatın; doğru sistem, arayüz ve teknoloji kurgusunu birlikte oluşturalım.</p></div>
+          <button class="btn btn-primary btn-large" data-open-offer>Projeyi Konuşalım →</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">ANVECAN</div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> ANVECAN</span>
-      <span>AI · DIGITAL · CREATIVE TECHNOLOGY</span>
-      <span id="clock">IST — --:--</span>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-main">anvecan</span><span class="brand-dot">.com</span></a><p>Yapay zekâ destekli dijital çözümlerle işinizi geleceğe taşıyoruz.</p></div>
+      <div><h4>Hizmetler</h4><a href="#hizmetler">Depo Stok Sayımı</a><a href="#hizmetler">Cafe Adisyon Sistemi</a><a href="#hizmetler">Web Tasarım</a><a href="#hizmetler">Mobil Uygulama</a><a href="#hizmetler">AI Otomasyon</a></div>
+      <div><h4>Şirket</h4><a href="#projeler">Projeler</a><a href="#surec">Süreç</a><a href="#iletisim">İletişim</a><button class="footer-link" data-open-offer>Teklif Al</button></div>
+      <div><h4>İletişim</h4><a href="mailto:info@anvecan.com">info@anvecan.com</a><a href="https://anvecan.com">anvecan.com</a><span>İstanbul, Türkiye</span></div>
+      <div class="newsletter"><h4>Projelerden haberdar olun</h4><p>Yeni ürün ve sistem çalışmalarımız için e-posta bırakın.</p><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">E-posta</label><div class="newsletter-input"><input id="newsletterEmail" type="email" required placeholder="E-posta adresiniz" /><button aria-label="Gönder">→</button></div></form></div>
     </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> anvecan.com — Tüm hakları saklıdır.</span><span>AI · Design · Code</span></div>
   </footer>
 
-  <script src="app.js?v=2"></script>
+  <div class="modal" id="offerModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="offerTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Kapat">×</button>
+      <span class="eyebrow"><span class="eyebrow-dot"></span> Yeni proje</span>
+      <h2 id="offerTitle">Fikrinizi bize anlatın.</h2>
+      <p>İhtiyacınızı kısa şekilde yazın. Form Netlify üzerinde doğrudan çalışır; diğer statik hostlarda e-posta uygulamanıza yönlendirir.</p>
+      <form name="project-request" id="offerForm" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="project-request" />
+        <p class="hidden"><label>Robot değilsen boş bırak <input name="bot-field" /></label></p>
+        <div class="form-row"><label>Adınız<input name="name" required autocomplete="name" placeholder="Ad Soyad" /></label><label>E-posta<input name="email" type="email" required autocomplete="email" placeholder="mail@ornek.com" /></label></div>
+        <label>Proje türü<select name="type"><option>Özel Yazılım / Uygulama</option><option>Web Tasarım</option><option>Cafe Adisyon / POS</option><option>Depo / Stok Sistemi</option><option>AI Otomasyon</option><option>UI/UX Tasarım</option><option>Diğer</option></select></label>
+        <label>Proje detayları<textarea name="message" required rows="5" placeholder="Ne yapmak istiyorsunuz?"></textarea></label>
+        <button class="btn btn-primary btn-large full" type="submit">Talebi Gönder →</button>
+        <div class="form-status" id="formStatus" role="status"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="detailModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="modal-backdrop" data-close-detail></div>
+    <div class="modal-card detail-modal-card">
+      <button class="modal-close" data-close-detail aria-label="Kapat">×</button>
+      <span class="eyebrow"><span class="eyebrow-dot"></span> ANVECAN çözümü</span>
+      <h2 id="detailTitle">Proje Detayı</h2>
+      <p id="detailText"></p>
+      <div class="detail-features" id="detailFeatures"></div>
+      <button class="btn btn-primary btn-large" id="detailOffer">Benzer Bir Proje İstiyorum →</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
 </html>
